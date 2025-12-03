@@ -1,0 +1,99 @@
+body{    
+    background-color: #050404;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    border: 2px solid #262A34;
+    background-color: #12141B;
+    margin-top: 140px;
+    width: 250px;
+    height: 310px;
+}
+input{
+    height: 60px;
+    width: 245px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #181B24;
+    border-radius: 8px;
+    color: #15F5BA;
+    margin-bottom: 7px;
+    font-size: 2em;
+      box-shadow:
+    0 0 0 2px #262A34,          /* thin outline */
+    0 20px 35px rgba(0, 0, 0, 0.75); /* deep drop shadow */
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,57px);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.buttons button{
+    height: 44px;
+    border-radius: 10px;
+    color: #F5F7FF;
+    background-color: #1F222C;
+    font-size: 16px;
+    box-shadow: 5px white;
+}
+.buttons .eql{
+    width: 120px;
+  background-color: #FF2E88;
+   border: none;
+   outline: none;
+   box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.85),
+    0 0 18px rgba(255, 78, 155, 0.85);
+}
+.buttons .eql:hover{
+    background-color: #FF4D9B;
+}
+.buttons .special{
+      background-color: #2B1024;
+      color: #FF2E88;
+}
+.buttons .special:hover{
+    background-color: #3A1631;
+}
+.buttons .op{
+    background-color: #252936;
+   color: #15F5BA;
+}
+.buttons .op:hover{
+    background-color: #303548;
+}
+.buttons button:hover{
+    background-color: #2A2E3A;
+}
+.buttons button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+@media (max-width: 500px) {
+    .cal {
+        width: 70%;
+        height: auto;
+    }
+    input{
+    height: 60px;
+    width: 233px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #181B24;
+    border-radius: 8px;
+    color: #15F5BA;
+    margin-bottom: 7px;
+    font-size: 2em;
+      box-shadow:
+    0 0 0 2px #262A34,          /* thin outline */
+    0 20px 35px rgba(0, 0, 0, 0.75); /* deep drop shadow */
+}
+}
